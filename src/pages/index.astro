@@ -1,0 +1,23 @@
+---
+import '@/styles/globals.css'
+import HomeLayout from '@/layout/HomeLayout.astro';
+import LangListLayout from '@/layout/LangListLayout.astro';
+import LangContent from '@/components/LangContent';
+---
+<HomeLayout title="under the hood">
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+			<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>under the hood</title>
+	</head>
+	<body>
+		<LangListLayout>
+			<LangContent />
+		</LangListLayout>
+	</body>
+	</html>
+	
+</HomeLayout>
