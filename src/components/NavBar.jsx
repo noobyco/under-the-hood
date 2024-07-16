@@ -5,7 +5,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { useState } from "react";
 
 const NavBar = () => {
-    const [menuState, setMenuState] = useState(false);
+    const [menuState, setMenuState] = useState(true);
     return (
         <>
             <div className="h-[5rem] flex justify-between items-center">
