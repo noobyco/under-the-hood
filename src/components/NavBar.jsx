@@ -5,7 +5,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { useState } from "react";
 
 const NavBar = () => {
-    const [menuState, setMenuState] = useState(true);
+    const [menuState, setMenuState] = useState(false);
     return (
         <>
             <div className="h-[5rem] flex justify-between items-center">
@@ -21,14 +21,14 @@ const NavBar = () => {
                     </button>
                     {
                         menuState ? (
-                            <div className="translate-y-40 ease-in-out delay-150 transition absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-black p-4 rounded-tl-md rounded-tr-md shadow-lg">
-                                <a href="https://x.com/noobyco" className="text-black font-bold text-center hover:text-yellow-400">Twitter</a>
-                                <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center hover:text-yellow-400">Codebase</a>
+                            <div className="transition ease-in-out delay-150 absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg">
+                                <a href="https://x.com/noobyco" className="text-black font-bold text-center">Twitter</a>
+                                <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center">Codebase</a>
                             </div>
                         ) : (
-                            <div className="transition absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg sm:hidden">
-                                <a href="https://x.com/noobyco" className="text-black font-bold text-center hover:text-yellow-400">Twitter</a>
-                                <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center hover:text-yellow-400">Codebase</a>
+                            <div className="translate-y-96 ease-in-out delay-150 transition absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg sm:hidden">
+                                <a href="https://x.com/noobyco" className="text-black font-bold text-center">Twitter</a>
+                                <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center">Codebase</a>
                             </div>
                         )
                     }
