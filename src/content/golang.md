@@ -1,5 +1,10 @@
 ---
 title: "golang"
-head: "under the hood - Golang"
-map: "coming-soon.png"
+head: "Under The Hood - Golang"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

@@ -13,13 +13,10 @@ const DocxBody = (props) => {
         <div>
             <LangMenuBurgerBox isOpen={langMenuState} onClick={() => setLangMenuState((prevToggle) => !prevToggle)} client:load />
             {
-            langMenuState ? <LangMenuMobile client:load setLangSelectedState={setLangSelectedState} transitionStatex="out" /> : <LangMenuMobile client:load setLangSelectedState={setLangSelectedState} transitionState="inside" className="-translate-x-96" />
+            langMenuState ? <LangMenuMobile client:load setLangSelectedState={setLangSelectedState} contents={props.contents} /> : <LangMenuMobile client:load setLangSelectedState={setLangSelectedState} className="-translate-x-96" contents={props.contents} />
             }
             <div className="flex h-[calc(100vh-7rem-2px)] sm:h-[calc(100vh-5rem-1px)] w-screen">
-                <LangMenuLargeScreen setLangSelectedState={setLangSelectedState} client:load />
-                <div>
-                        <Separator orientation="vertical" className="text-black hidden sm:block" />
-                </div>
+                <LangMenuLargeScreen setLangSelectedState={setLangSelectedState} contents={props.contents} client:load />
                 <DocxContent langSelectedState={langSelectedState} contents={props.contents} />
             </div>
         </div>

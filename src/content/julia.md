@@ -1,5 +1,10 @@
 ---
 title: "julia"
-head: "under the hood - Julia"
-map: "coming-soon.png"
+head: "Under The Hood - Julia"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

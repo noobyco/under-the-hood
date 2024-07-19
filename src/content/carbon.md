@@ -1,5 +1,10 @@
 ---
 title: "carbon"
-head: "under the hood - Carbon"
-map: "coming-soon.png"
+head: "Under The Hood - Carbon"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

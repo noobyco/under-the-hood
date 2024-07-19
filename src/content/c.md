@@ -1,6 +1,10 @@
 ---
 title: "c"
-head: "under the hood - C"
-map: "/coming-soon.png"
-coming-soon-flag: "true" # true or false
+head: "Under The Hood - C"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

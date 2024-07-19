@@ -1,5 +1,10 @@
 ---
 title: "rust"
-head: "under the hood - Rust"
-map: "coming-soon.png"
+head: "Under The Hood - Rust"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

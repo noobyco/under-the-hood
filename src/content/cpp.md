@@ -1,5 +1,10 @@
 ---
 title: "c++"
-head: "under the hood - C++"
-map: "coming-soon.png"
+head: "Under The Hood - C++"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

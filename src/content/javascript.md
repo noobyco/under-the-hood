@@ -1,5 +1,10 @@
 ---
 title: "javascript"
-head: "under the hood - JavaScript"
-map: "coming-soon.png"
+head: "Under The Hood - JavaScript"
+map: ""
+comingSoonFlag: "true" # true or false
+blog: ""
+
+# status of content creation
+status: ""
 ---

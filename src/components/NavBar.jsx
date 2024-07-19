@@ -10,23 +10,23 @@ const NavBar = () => {
         <>
             <div className="h-[5rem] flex justify-between items-center">
                 <a href="/">
-                    <div className="flex items-center gap-4 ml-5 sm:ml-10 hover:opacity-45">
+                    <div className="flex items-center gap-4 ml-5 sm:ml-10 sm:hover:scale-110 sm:transition">
                         <img src="/banana.png" width="40px" alt="Logo" />
                         <h1 className="text-white text-xl">Under The Hood</h1>
                     </div>
                 </a>
                 <div className="sm:flex sm:gap-4">
                     <button className="" onClick={()=> setMenuState(previousState => !previousState)}>
-                        <RiMenu3Fill className="text-white hover:text-yellow-400 text-3xl sm:hidden mr-5 sm:mr-10" />
+                        <RiMenu3Fill className="text-white sm:hover:text-yellow-400 text-3xl sm:hidden mr-5 sm:mr-10" />
                     </button>
                     {
                         menuState ? (
-                            <div className="transition ease-in-out delay-150 absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg">
+                            <div className="transition ease-in-out delay-150 absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg sm:hidden">
                                 <a href="https://x.com/noobyco" className="text-black font-bold text-center">Twitter</a>
                                 <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center">Codebase</a>
                             </div>
                         ) : (
-                            <div className="translate-y-96 ease-in-out delay-150 transition absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg sm:hidden">
+                            <div className="-translate-x-[200rem] ease-in-out transition absolute bottom-0 left-0 right-0 flex flex-col gap-4 bg-yellow-400 p-4 rounded-tl-md rounded-tr-md shadow-lg sm:hidden">
                                 <a href="https://x.com/noobyco" className="text-black font-bold text-center">Twitter</a>
                                 <a href="https://github.com/noobyco/under-the-hood" className="text-black font-bold text-center">Codebase</a>
                             </div>
